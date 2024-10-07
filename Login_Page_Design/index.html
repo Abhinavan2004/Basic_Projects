@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    .box{
+        background-color: #fff;
+        position: relative;
+        margin-top:150px;
+        margin-left:290px;
+        display: flex;
+        width:30vw;
+        height:60.5vh;
+        text-align: center;
+        align-items: center;
+        line-height: 2rem;
+        justify-content: center;
+        border-radius:12px 0 0 12px;
+        box-shadow: -3px 0px 15px rgba(0 ,0 ,0 ,0.4);
+    }
+    .box_2 h3{
+        padding-left:60px;
+        padding-right:60px;
+        margin-top:30px;
+        font-size:1.2rem;
+        font-weight: 300;
+    }
+
+    .box_2{
+        background-color:#ff4b2b;
+        border:2px solid red;
+        color:#fff;
+        border-radius:0 12px 12px 0;
+        box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.4);
+        width:30vw;
+        height:60.5vh;
+        position: absolute;
+        display: flex;
+        top:150px;
+        left:750px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;  
+    }
+    h1{
+        font-size:3rem;
+        font-weight: bold;
+    }
+
+    body{
+        background-color:#f3e0e2;
+    }
+    
+    input{
+        width:350px;
+        height:45px;
+        background-color: lightgrey;
+        margin:7px;
+        font-size:1.1rem;
+        border:none;
+        outline: none;
+        border-radius:4px;
+        text-align: center;
+    }
+    .box h5{
+        color:grey;
+        font-size:1rem;
+        font-weight:lighter;
+    }
+    ion-icon{
+        border:2px solid black;
+        border-radius: 100px;
+        font-size: 35px;
+        margin:10px;
+        padding:1.5px;
+        margin-top:30px;
+    }
+    .box a{
+        font-weight: lighter;
+        text-decoration: none;
+        color:grey;
+    }
+    .box a:hover{
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        color:blue;
+        cursor: pointer;
+    }
+    button{
+        width:180px;
+        height: 50px;
+        background-color: #ff4b2b;
+        border:none;
+        outline: none;
+        border-radius: 100px;
+        color:#fff;
+        font-weight: bold;
+        font-size:1.4rem;
+    }
+    button:hover{
+        opacity:0.7;
+    }
+    
+</style>
+<body>
+    <main class="box">
+        <section id="side_left" >
+                <h1>Login</h1>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <h5>or use your Account</h5>
+                <form>
+                <input type="email" name="email-id" placeholder="Enter Email-id"><br>
+                <input type="password" name="password" placeholder="Enter Password">
+            </form>  
+            <a href="www.google.com">Forget your password?</a><br>
+            <button>LOG IN</button>
+        </section>
+    </main>
+    <main class="box_2">
+        <section id="side_right">
+            <div id="writing">
+            <h1 id="html">HTML CSS Login<br>Form</h1>
+            <h3>This Login Form is created using pure HTMl & CSS. For social icons, Ion-icons are used.
+            </h3>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
