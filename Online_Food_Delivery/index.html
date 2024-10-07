@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:2px;
+    }
+    .top_2{
+        height:350px;
+        background: linear-gradient(0deg, rgb(201, 188, 244) 0%, rgb(255, 255, 255) 95.83%);
+    }
+    img{
+        width:530px;
+        height:297px;
+        position:relative;
+        display: flex;
+        left:+950px;
+        top:-150px;
+    }
+    h4{
+        color:cadetblue;
+        padding-top:20px;
+        font-size: 2rem;
+    }
+    #boxes {
+        display: flex;
+        height:420px;
+    }
+    #box1 img:hover ,#box2 img:hover,#box3 img:hover,#box4 img:hover{
+        box-shadow: 10px 10px rgb(142, 66, 66);
+        cursor: pointer;
+    }
+    #box1 img ,#box2 img,#box3 img,#box4 img{
+        position:relative;
+        border:2px solid red;
+        display: flex;
+        top:+5px;
+        left:3px;
+        width:340px;
+        height:300px;
+        /* margin-left:10px; */
+        margin:14px;
+        
+    }
+    #boxes h5{
+        padding-left:40px;
+        text-align:center;
+        padding-top:20px;
+        color:#0072BB;
+    }
+    #boxes span{
+        color:crimson;
+        font-size: 1.4rem;
+        text-decoration: none;
+    }
+    .descrip #head ,.descrip2 #head2{
+        font-size:2.3rem;
+        padding:20px;
+        padding-top:30px;
+        color:cadetblue;
+        font-weight:bold;
+        font-style: italic;
+    }
+    .descrip2 p{
+        margin-left:18px;
+        margin-right:18px;
+        font-size:1.3rem;
+        font-family: cursive;
+        line-height: 25px;
+        text-align:justify;
+    }
+    .descrip li{
+        font-size:1.5rem;
+    }
+    #table{
+        display: flex;
+        justify-content: center;
+        padding:3px;
+        margin:18px;
+       
+    }
+    #table td{
+        padding:20px;
+        width:400px;
+        border:2px solid rgb(73, 113, 246);
+        text-align: center;
+        font-size:1.2rem;
+        font-weight: bold;
+    }
+    #table #data{
+        font-size: 1.6rem;
+        font-family: cursive;
+        font-weight: bold;
+    }
+    #table tr:hover{
+        background-color: #51bced;
+    }
+
+    #contact h4{
+        text-align: center;
+        font-size:3rem;
+        font-family: Gabriela;
+        color: black;
+    }
+
+    #contact::before{
+        content:"";
+        position:absolute;
+        z-index:-1;
+        height:55%;
+        width:99%;
+        background: url("./contact.jpg");
+    }
+
+    #contact form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+        font-size: 20px;
+        font-family: cursive;
+
+    }
+    #contact input{
+        width:40%;
+        height:20px;
+        font-size: 1.2rem;
+        text-align: center;
+        border:3px solid black;
+        border-radius:14px;
+    }
+    #contact textarea{
+        width:40%;
+        height:40%;
+        font-size: 1.2rem;
+        text-align: center;
+        border:3px solid black;
+        border-radius:14px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        color:white;
+        background-color: black;
+        text-align: center;
+        height:50px;
+        width:99.6%;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="top_one">
+        <div style="color:orange; font-size:3.4rem; text-decoration:solid">Foodie</div>
+        <div style="color:black; font-size:1.8rem; font-style: italic;">Delivering Happiness at your Doorstep!!!</div><hr>
+        <div class="top_2">
+        <div style="color:rgba(2, 6, 12, 0.75); font-size:3.8rem; padding-top:130px; font-weight:bold">Order Food Online in Maharashtra</div>
+        <div> <img src="./combo.jpeg"></div>
+    </div>
+    </div>
+    <h4>Restaurants with online food delivery in Maharashtra</h4><br>
+    <section class="names of">
+        <div id="boxes">
+            <div id="box1">
+                <img src="./burger king.jpeg" alt="first box" >
+                <h5><a href="https://www.burgerking.com" alt="error in loading" target="_blank"><span>Burger king </span></a><br>4.4<br>Burger,America<br>Punjabi Bagh</p></h5>
+            </div>
+            <div id="box2">
+                <img src="./dominos.jpeg" alt="second box" >
+                <h5><a href="https://www.dominos.com" alt ="error in loading" target="_blank"><span>Domino's </span></a><br>4.7<br>Dominos,California<br>ITO</p></h5>
+            </div>
+            <div id="box3">
+                <img src="./subway.jpeg" alt="third box" >
+                <h5><a href="https://www.subway.com" alt ="error in loading" target="_blank"><span>Subway</span></a><br>4.5<br>SubWay, New York<br>Central Delhi</p></h5>
+            </div>
+            <div id="box4">
+                <img src="./kfc.jpeg" alt="fourth box" >
+                <h5> <a href="https://online.kfc.co.in/" alt ="error in loading" target="_blank"><span>KFC</span></a><br>5<br>KFC, LONDON<br>NFC</p></h5>
+            </div>
+        </div> 
+    </section>
+    <main class ="descrip">
+        <div id="head">World famous food Ranking</div>
+        <div><ul>
+        <li>PASTA</li>
+        <li>MOMO'S</li>
+        <li>PIZZA</li>
+        <li>DOSA</li>
+        <li>SANDWICH</li>
+    </ul></div>
+    </main>
+
+    <main class ="descrip2">
+        <div id="head2">Food Culture in Maharashtra</div>
+        <div><p>Hunger has no excuses. Your cravings must be satisfied, whether it's early morning or late night. Don't let your cravings go in vain. Place your online food order in Delhi with Swiggy and be assured of timely delivery. The capital city of India has countless restaurants near you that deliver piping hot, lip-smacking cuisines.
+            Swiggy lets you order your favourite food online in Delhi from top-rated restaurants, cafes, and food joints from your local vicinity. Don’t let the plethora of options confuse you. Use search filters and sort your options to find exactly what you need. Looking for that favourite Maharaja Mac? Just type it in the search box, and you will get it.</p></div>
+            <div id="table">
+                <table>
+                    <tr>
+                        <td id="data">Food</td>
+                        <td id="data">Famous</td>
+                        <td id="data">Price</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza</td>
+                        <td>Barbeque Pizza</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>Momo's</td>
+                        <td>Dahiya Momo's</td>
+                        <td>$28</td>
+                    </tr>
+                    <tr>
+                        <td>Pasta</td>
+                        <td>PizzaHut</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>Pav Bhaji</td>
+                        <td>Haldiram's</td>
+                        <td>$25</td>
+                    </tr>
+                </table>
+            </div>
+    </main>
+    <section id="contact">
+        <div class="form">
+            <h4>Contact Us</h4>
+            <form>
+                Name:<input type="text" name="name" placeholder="Enter Your Name">
+                Email-id:<input type="email" name="id" placeholder="Enter your Email Id">
+                Phone No.:<input type="number" name="contact no" placeholder="Enter Your Contact no">
+                Message:<textarea name="messgaebox" placeholder="Enter Your Message"></textarea>
+            </form>
+        </div>
+    </section> 
+    <footer>Copyright &copy;www.Foodie.com. All rights are Reserved.</footer>
+</body>
+</html>
