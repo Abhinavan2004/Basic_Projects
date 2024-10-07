@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0%;
+    background-color: #071A28;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.landingPage{
+    background-image: url("./landing+page.jpg");
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.heading{
+    background-color: transparent;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    padding-bottom: 140px;
+    font-size: 80px;
+    font-family: Times;
+}
+
+.quote{
+    text-align: right;
+    font-size: 60px;
+    font-family:cursive;
+    padding-right: 20px; 
+    color: white;
+    background-color: transparent;
+}
+
+.headingPara{
+    color: white;
+    background-color:transparent;
+    padding-top: 30px;
+    text-align: right;
+    margin-left: 30%;
+    padding-right: 20px;
+}
+
+h4{
+    font-size:24px;
+    text-align: center;
+    padding-top:120px;
+    padding-bottom:30px;
+}
+
+#table_1{
+    border-collapse: collapse;
+    margin-left:200px;
+    text-align: center;
+    margin-bottom:70px;
+}
+
+td{
+    border: 1px solid #f70303;
+}
+
+.he{
+    border:2px solid tomato;
+    width:350px;
+    height:40px;
+    background-color: red;
+    font-weight: bolder;
+}
+
+li{
+    line-height: 3em;
+}
+
+a{
+    text-decoration: none;
+    margin-left:700px;
+   
+    
+}
+
+li:hover{
+    color:yellow;
+    cursor: pointer;
+}
+
+#payment:hover{
+    color:chartreuse;
+    cursor: pointer;
+}
+a:hover{
+    color:cyan;
+    font-weight: bolder;
+    font-size: 24px;
+    text-shadow:3px 4px blueviolet;
+    
+
+    
+}
+footer{
+    padding-top:20px;
+    padding-bottom:20px;
+    height:40px;   
+}
+
+img:hover{
+    width:100%;
+}
+#foot{
+    background-color: burlywood;
+    color:brown;
+    font-weight: bolder;
+    font-size:18px;
+    height:50px;
+    text-align: center; 
+}
+span{
+    color:blue; 
+    background-color: transparent;
+}
