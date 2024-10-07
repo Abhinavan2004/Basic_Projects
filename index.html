@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhi online Meal Delivery.com</title>
+    <link rel="stylesheet" media ="screen and (max-width:1170px)" href="./abhi_pj9.css" >
+</head>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    /* NAVIGATION BAR KA PART  */
+    #navbar{
+        display: flex;
+        align-items:center;
+    }
+    #logo img{
+        margin:10px 20px;
+        width:60px; 
+        height:70px;
+        background-color: antiquewhite;
+        border:2px solid black;
+        border-radius: 90px;
+        border-top-right-radius: 3px;
+    }
+    #navbar{
+        position:relative;
+    }
+    #navbar ul{
+        display:flex;
+    }
+    #navbar::before{
+        content:"";
+        background-color: black;
+        position:absolute;
+        height:80%;
+        width:100%;
+        z-index:-1;
+        opacity:0.5;
+    }
+    #navbar ul li{
+        color:white;
+        list-style: none;
+        font-size: 1.3rem;
+        font-family: cursive;
+    }
+    #navbar ul li a{
+        display: block;
+        padding:3px 24px;
+        border-radius:20px;
+        text-decoration: none;
+    }
+    #navbar ul li a:hover{
+        color:black;
+        background-color: cyan;
+    }
+
+    /* HOME SECTION KA PART */
+    #home{
+        display:flex;
+        flex-direction: column;
+        padding:5px 250px;
+        justify-content: center;
+        align-items: center;
+        height:400px;
+    }
+    #home::before{
+        content:"";
+        background:url("./bg1.jpg") no-repeat center center/cover;
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:-1;
+        opacity:0.9;
+    }
+    h1{
+        font-size: 3rem;
+        padding-top:120px;
+        padding-bottom:30px;
+        color:aliceblue;
+    }
+    #home  p{
+        
+        color:whitesmoke;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family:Mooli;
+        
+    }
+    .btn{
+        padding: 6px 20px;
+        border:2px solid white;
+        background-color: rgb(240, 86, 117);
+        color:aliceblue;
+        margin:30px;
+        height:40px;
+        margin-top:70px;
+        font-size:1.2rem;
+        border-radius:3px;
+    }
+    .btn:hover{
+        color:white;
+        background-color:transparent;
+        
+    }
+
+    /* SERVICES WALA PART  */
+     #service-heading{
+        margin-top:80px;
+        color:black;
+        font-size:40px;
+        display: flex;
+        justify-content: center;
+        font-family:Gabriela;
+    }
+    .boxes{
+        display: flex;
+        margin:20px; 
+    }
+    .b1 , .b2 , .b3{
+        padding:30px;
+        border:3px solid rgb(239, 130, 130);
+        border-radius:25px;
+        height:350px;
+        width:400px;
+        margin:30px;
+        background-color:rgb(228, 219, 203);
+        box-shadow: 10px 10px 30px;
+  }
+   .b1{
+    margin-left:60px;
+   }
+   .b1 h4 , .b2 h4 , .b3 h4{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px chartreuse;
+   }
+    
+    .b1 img, .b2 img ,.b3 img {
+        display: block;
+        margin: auto;
+        height:200px;
+        width:240px;
+    }
+
+    .b1 p , .b2 p ,.b3 p{
+        text-align: center;
+        margin-top:30px;
+        font-size: 1.29rem;
+        font-weight: bold;
+        font-family:Gabriela;
+    }
+    
+    /* SPONSERS WALA PART  */
+    .Sponsers h1{
+        color:black;
+        display: flex;
+        font-size:2.5rem;
+        justify-content: center;
+        font-family:Gabriela;
+        
+    } 
+    
+    .Sponsers::before{
+        content:"";
+        position: absolute;
+        background: url("business.jpg");
+        display: flex;
+        top:+1400px;
+        width:100%;
+        height:70%;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    #sponsers{
+        /* padding:30px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* CONTACT US WALA PART  */
+    #contact h4{
+        text-align: center;
+        font-size:3rem;
+        font-family: Gabriela;
+    }
+
+    #contact::before{
+        content:"";
+        position:absolute;
+        z-index:-1;
+        height:48%;
+        width:100%;
+        background: url("./contact.jpg");
+    }
+
+    #contact form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+        font-size: 20px;
+        font-family: cursive;
+
+    }
+    #contact input{
+        width:40%;
+        height:20px;
+        font-size: 1.2rem;
+        text-align: center;
+        border:3px solid black;
+        border-radius:14px;
+    }
+    #contact textarea{
+        width:40%;
+        height:40%;
+        font-size: 1.2rem;
+        text-align: center;
+        border:3px solid black;
+        border-radius:14px;
+        
+    }
+
+    /* FOOTER KA PART  */ 
+     footer{
+        background-color: black;
+        color:white;
+        display:flex;
+        justify-content: center;
+        height:20px;
+    }
+   
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./logo_av.png" alt="Abhi online Meal Delivery">
+        </div> 
+
+        <ul>
+            <li class="items"><a>Home</a></li>
+            <li class="items"><a>Services</a></li>
+            <li class="items"><a>About us</a></li>
+            <li class="items"><a>Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class ="h-one">Welcome to Abhi Online Meal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam inventore expedita iusto a eius minus rerum aut repudiandae laudantium quos </p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ab ad dolorum nobis sequi possimus magni cumque libero unde animi, molestias </p>
+        <button class="btn">ORDER  NOW</button>
+    </section> 
+    
+    <section  class="servicesss">
+        <h1 id="service-heading">Our Services</h1>
+        <div class="boxes">
+            <div class="b1">
+                <h4>Take-Aways</h4>
+                <img  src ="1.png" alt="service 1">
+                <p>10/10 would recommend staying in and ordering takeout...</p>
+            </div>
+            <div class="b2">
+                <h4>Food Dining</h4>
+                <img  src ="2.png" alt="service 2" >
+                <p>One cannot sleep well, if one has not dined well...</p>
+            </div>
+            <div class="b3">
+                <h4>Food Delivering</h4>
+                <img  src ="3.png" alt="service 3">
+                <p>Best things in life are delivered to your doorstep– "Momos" included...</p>
+            </div>
+        </div>
+    </section>
+<hr>
+    <section class="Sponsers">
+        <h1 >Our Clients & Sponsers</h1>
+        <div id="sponsers">
+            <div class="first">
+                <img src="./logo1.png" height="400px">
+            </div>
+            <div class="second">
+                <img src="./logo2.png" height="200px">
+            </div>
+            <div class="third">
+                <img src="./logo3.png"  height="100px">
+            </div>
+            <div class="fourth">
+                <img src="./logo4.png" height="150px">
+            </div>
+        </div>
+    </section>
+<hr>
+    <section id="contact">
+        <div class="form">
+            <h4>Contact Us</h4>
+            <form>
+                Name:<input type="text" name="name" placeholder="Enter Your Name">
+                Email-id:<input type="email" name="id" placeholder="Enter your Email Id">
+                Phone No.:<input type="number" name="contact no" placeholder="Enter Your Contact no">
+                Message:<textarea name="messgaebox" placeholder="Enter Your Message"></textarea>
+            </form>
+        </div>
+    </section> 
+
+    <footer>Copyright &copy; www.AbhiMealOnline.com, All rights Reserved.</footer>
+</body>
+</html>
